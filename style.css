@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "sidebar header"
+  "sidebar main-content";
+}
+
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: green;
+}
