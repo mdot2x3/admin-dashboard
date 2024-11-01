@@ -17,7 +17,19 @@
 
 .header {
   grid-area: header;
-  background-color: blue;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 2fr 1f;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "search login-panel"
+  "greeting-panel control-panel";
+  justify-content: space-between;
+}
+
+.control-panel ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sidebar {
