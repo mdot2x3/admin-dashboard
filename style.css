@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -20,7 +22,28 @@
 
 .sidebar {
   grid-area: sidebar;
-  background-color: red;
+  background-color: #0284c7;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: grid;
+  align-content: start;
+  justify-content: center;
+  row-gap: 5%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15%;
+}
+
+.user-links li{
+  padding: 5%;
+}
+
+.site-links li{
+  padding: 5%;
 }
 
 .main-content {
