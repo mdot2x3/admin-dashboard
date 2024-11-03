@@ -102,11 +102,25 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-rows: max(5%) repeat(3, minmax(100px, 200px));
+  gap: 20px;
+}
+
+.projects h3 {
+  grid-column: span 2;
+}
+
+.card {
+  height: 200px;
+  width: 350px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid black;
+  
 }
 
 .notices {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
