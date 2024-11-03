@@ -8,7 +8,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: auto;
   grid-template-areas: 
   "sidebar header"
@@ -25,11 +25,44 @@
   "search login-panel"
   "greeting-panel control-panel";
   justify-content: space-between;
+  padding: 2%;
+}
+
+.search input {
+  width: 150%;
+  height: 60%;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 25px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.login-panel {
+  display: grid;
+  justify-content: end;
+}
+
+.greeting-panel p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .control-panel ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.control-panel button {
+  width: 100px;
+  height: 40px;
+  background-color: #0284c7;
+  color: #e2e8f0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
 }
 
 .sidebar {
@@ -40,14 +73,15 @@
   font-weight: bold;
   display: grid;
   align-content: start;
-  justify-content: center;
+  justify-content: start;
   row-gap: 5%;
+  padding: 5%;
 }
 
 .title {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .user-links li{
