@@ -14,6 +14,7 @@
   "sidebar header"
   "sidebar main-content";
   height: 100em;
+  background-color: #e2e8f0;
 }
 
 .header {
@@ -78,6 +79,7 @@
   justify-content: start;
   row-gap: 5%;
   padding: 5%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
 .title {
@@ -101,6 +103,7 @@
   grid-template-columns: 2fr 1fr;
   box-shadow: inset 0 8px 4px -4px rgba(0, 0, 0, 0.15);
   height: 88em;
+  width: fit-content;
 }
 
 .projects {
@@ -147,21 +150,26 @@
 
 .announcements {
   display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(5%, 50%)); */
   grid-template-rows: 5% 50%;
   margin: 10% 0 5% 0;
 }
 
 .announcements ul {
-  height: 310px;
-  width: 200px;
+  height: 30em;
+  width: 25em;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 20px;
-  padding: 5%;
+  padding: 10%;
   font-size: 12px;
+}
+
+.announcements li {
+  margin: 10px;
 }
 
 .announcements h5 {
@@ -179,15 +187,15 @@
 }
 
 .trending ul {
-  height: 250px;
-  width: 200px;
+  height: 15em;
+  width: 19em;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-top: 20px;
-  padding: 5%;
+  padding: 10%;
 }
 
 .trending p {
