@@ -27,13 +27,20 @@
   "search login-panel"
   "greeting-panel control-panel";
   justify-content: space-between;
-  padding: 2%;
-  height: 12em;
+  padding-top: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  height: 14em;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 30px));
 }
 
 .search input {
-  width: 150%;
-  height: 60%;
+  width: 500px;
+  height: 35px;
   background-color: #e2e8f0;
   border: none;
   border-radius: 25px;
@@ -41,14 +48,43 @@
   font-size: 16px;
 }
 
+.search img {
+  height: 25px;
+  width: 25px;
+  margin-top: 7px;
+}
+
 .login-panel {
   display: grid;
   justify-content: end;
+  align-content: start;
+  margin-bottom: 50px;
+}
+
+.login-panel img {
+  height: 25px;
+  width: 25px;
+  margin-right: 40px;
+}
+
+#user {
+  height: 45px;
+  width: 45px;
+}
+
+.greeting-panel {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .greeting-panel p {
   font-size: 14px;
   font-weight: bold;
+}
+
+.greeting-panel img {
+  height: 70px;
+  width: 70px;
 }
 
 .control-panel ul {
@@ -86,14 +122,35 @@
   font-size: 25px;
   font-weight: bold;
   margin-top: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  height: 50px;
+  width: 50px;
 }
 
 .user-links li{
   padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.user-links img {
+  height: 20px;
+  width: 20px;
 }
 
 .site-links li{
   padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.site-links img {
+  height: 20px;
+  width: 20px;
 }
 
 .main-content {
@@ -102,7 +159,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   box-shadow: inset 0 8px 4px -4px rgba(0, 0, 0, 0.15);
-  height: 88em;
+  height: 86em;
   width: fit-content;
 }
 
@@ -206,6 +263,11 @@
   font-size: 14px;
 }
 
+.trending img {
+  height: 45px;
+  width: 45px;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -213,4 +275,9 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+
+.filter {
+  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(337deg) brightness(107%) contrast(101%);
+  margin-right: 10px;
 }
