@@ -214,7 +214,7 @@
 
 .announcements ul {
   height: 30em;
-  width: 25em;
+  width: 23em;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -244,15 +244,16 @@
 }
 
 .trending ul {
-  height: 15em;
-  width: 19em;
+  height: 20em;
+  width: 17em;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-top: 20px;
-  padding: 10%;
+  padding: 10% 0 0 10%;
 }
 
 .trending p {
@@ -261,6 +262,8 @@
 
 .trending li {
   font-size: 14px;
+  width: 200px;
+  padding-left: 20px;
 }
 
 .trending img {
