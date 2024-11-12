@@ -13,6 +13,7 @@
   grid-template-areas: 
   "sidebar header"
   "sidebar main-content";
+  height: 100em;
 }
 
 .header {
@@ -26,6 +27,7 @@
   "greeting-panel control-panel";
   justify-content: space-between;
   padding: 2%;
+  height: 12em;
 }
 
 .search input {
@@ -98,6 +100,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   box-shadow: inset 0 8px 4px -4px rgba(0, 0, 0, 0.15);
+  height: 88em;
 }
 
 .projects {
@@ -137,9 +140,9 @@
 }
 
 .notices {
-  display: grid;
+  /* display: grid; */
   /* grid-template-rows: 1fr 1fr; */
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .announcements {
@@ -149,7 +152,7 @@
 }
 
 .announcements ul {
-  height: 350px;
+  height: 310px;
   width: 200px;
   background-color: #fafafa;
   border-radius: 10px;
@@ -157,15 +160,26 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 20px;
+  padding: 5%;
+  font-size: 12px;
+}
+
+.announcements h5 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.announcements p {
+  color: #525252;
 }
 
 .trending {
   display: grid;
-  grid-template-rows: 5% 50%;;
+  grid-template-rows: 5% 50%;
 }
 
 .trending ul {
-  height: 350px;
+  height: 250px;
   width: 200px;
   background-color: #fafafa;
   border-radius: 10px;
@@ -173,4 +187,22 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-top: 20px;
+  padding: 5%;
+}
+
+.trending p {
+  color: #525252;
+}
+
+.trending li {
+  font-size: 14px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
